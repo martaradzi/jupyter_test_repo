@@ -563,6 +563,17 @@ test = ["fastjsonschema", "testpath", "pytest", "pytest-cov"]
 
 [[package]]
 category = "main"
+description = "Strips outputs from Jupyter and IPython notebooks"
+name = "nbstripout"
+optional = false
+python-versions = ">=3.5"
+version = "0.3.9"
+
+[package.dependencies]
+nbformat = "*"
+
+[[package]]
+category = "main"
 description = "Patch asyncio to allow nested event loops"
 name = "nest-asyncio"
 optional = false
@@ -998,7 +1009,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [metadata]
-content-hash = "553f45108d185d9b9b0429bb0b89703921365a5e43b4b848f5cbe43d0ddbb3e7"
+content-hash = "52ebb14737ec64de8d212a5422dfee4c8f39746dfc9f3589931771dc601dca17"
 lock-version = "1.0"
 python-versions = "^3.7"
 
@@ -1294,6 +1305,10 @@ nbconvert = [
 nbformat = [
     {file = "nbformat-5.0.8-py3-none-any.whl", hash = "sha256:aa9450c16d29286dc69b92ea4913c1bffe86488f90184445996ccc03a2f60382"},
     {file = "nbformat-5.0.8.tar.gz", hash = "sha256:f545b22138865bfbcc6b1ffe89ed5a2b8e2dc5d4fe876f2ca60d8e6f702a30f8"},
+]
+nbstripout = [
+    {file = "nbstripout-0.3.9-py2.py3-none-any.whl", hash = "sha256:261dcbb993bdcf194d61f2804bdc69fb437f2f3d250ffa3dcd49184189e9fb95"},
+    {file = "nbstripout-0.3.9.tar.gz", hash = "sha256:b46dddbf78b8b137176bc72729124e378242ef9ce93af63f6e0a8c4850c972e7"},
 ]
 nest-asyncio = [
     {file = "nest_asyncio-1.4.3-py3-none-any.whl", hash = "sha256:dbe032f3e9ff7f120e76be22bf6e7958e867aed1743e6894b8a9585fe8495cc9"},
